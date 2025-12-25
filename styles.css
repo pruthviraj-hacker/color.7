@@ -1,0 +1,33 @@
+.swatch {
+  padding: 0.5rem;
+  border: 1px solid var(--color-stroke);
+}
+
+.swatch__sample {
+  height: 120px;
+  border: 1.8px solid black;
+  margin-bottom: 1rem;
+  box-shadow: 10px 10px 8px #888888;
+  transition: all 0.3s ease;
+}
+.swatch__sample:hover{
+    transform: scale(1.1);
+    background-color: #1abc9c;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size, 12rem), 1fr)
+  );
+  gap: 1rem;
+  padding: 0;
+}
+
+li + li {
+  margin: 0;
+}
+
+
+
